@@ -1,6 +1,6 @@
 {
   "name": "coffeescript-styleguide",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Style guide for CoffeeScript",
   "main": "README.md",
   "repository": {
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/style-guides/CoffeeScript/issues"
   },
-  "homepage": "https://github.com/style-guides/CoffeeScript#readme"
+  "homepage": "https://github.com/style-guides/CoffeeScript#readme",
+  "scripts": {}
 }
