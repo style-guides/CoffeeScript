@@ -106,12 +106,12 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 - Parentheses for an empty argument list MUST be omitted
 
-		logTest = () ->
+		logTest = ->
 			console.log 'test'
 
 	instead of
 
-		logTest = ->
+		logTest = () ->
 			console.log 'test'
 
 - Fat arrows MUST only be used when necessary
