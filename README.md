@@ -26,7 +26,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ## Multi-line Statements
 
-- Lines MUST not me longer than 80 characters (counting tabs as 4 spaces)
+- Lines MUST not be longer than 80 characters (counting tabs as 4 spaces)
 - When a statement is too long to fit on one line,
 	line breaks MUST occur after an operator
 
@@ -127,7 +127,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ### Chaining
 
-- Method chains with more than 2 method calls must be wrapped and indented.
+- Method chains with more than 2 method calls MUST be wrapped and indented.
 
 		$('#items')
 			.find('.selected')
