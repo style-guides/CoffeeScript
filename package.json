@@ -1,6 +1,6 @@
 {
   "name": "coffeescript-styleguide",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Style guide for CoffeeScript",
   "main": "README.md",
   "repository": {
