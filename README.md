@@ -117,6 +117,20 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 	test = "foo"
 	```
 
+## Objects
+
+- Shorthand assignments with braces MUST be used in single-line assignments
+
+	```coffeescript
+	test = { name }
+	```
+
+	instead of
+
+	```coffeescript
+	test = name: name
+	```
+
 
 ## Functions
 
