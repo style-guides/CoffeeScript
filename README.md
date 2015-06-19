@@ -194,6 +194,22 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 	add = (a, b) -> a + b
 	```
 
+- Function calls with more than 2 arguments SHOULD be split over several lines
+
+	```coffeescript
+	doSomething(
+		'with'
+		'those'
+		'strings'
+	)
+	```
+
+	instead of
+
+	```coffeescript
+	doSomething 'with', 'those', 'strings'
+	```
+
 
 ### Chaining
 
