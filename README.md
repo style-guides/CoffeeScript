@@ -73,6 +73,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ## Relational Operators
 
 - `is` MUST be used over `==`
+- `not` MUST be used over `!`
 - `isnt` MUST be used over `!=`
 - `or` MUST be used over `||`
 - `and` MUST be used over `&&`
