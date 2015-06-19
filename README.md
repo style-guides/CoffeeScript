@@ -131,6 +131,25 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 	test = name: name
 	```
 
+- Objects with braces MUST be indented
+
+	```coffeescript
+	return {
+		x: 1
+		y: 2
+	}
+	```
+
+	instead of
+
+	```coffeescript
+	return {
+	x: 1
+	y: 2
+	}
+	```
+
+
 
 ## Functions
 
