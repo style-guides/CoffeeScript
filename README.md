@@ -117,6 +117,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 	test = "foo"
 	```
 
+
 ## Objects
 
 - Shorthand assignments with braces MUST be used in single-line assignments
@@ -148,7 +149,6 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 	y: 2
 	}
 	```
-
 
 
 ## Functions
@@ -229,8 +229,33 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 		.split('')
 	```
 
-
 - Methods SHOULD return `@` to enable method chaining
+
+
+## Conditionals
+
+- Newlines SHOULD be insterted after `if` and `else` blocks
+
+	```coffeescript
+	if isTest
+		doSomething()
+		doSomethingElse()
+
+	else
+		doNothing()
+		jumpAround()
+	```
+
+	instead of
+
+	```coffeescript
+	if isTest
+		doSomething()
+		doSomethingElse()
+	else
+		doNothing()
+		jumpAround()
+	```
 
 
 ## Type Casting
