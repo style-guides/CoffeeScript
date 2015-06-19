@@ -148,6 +148,19 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 		console.log 'test'
 	```
 
+- Implicit returns SHOULD NOT be used
+
+	```coffeescript
+	add = (a, b) ->
+		return a + b
+	```
+
+	instead of
+
+	```coffeescript
+	add = (a, b) -> a + b
+	```
+
 
 ### Chaining
 
