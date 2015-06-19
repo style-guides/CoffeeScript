@@ -35,39 +35,51 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 - Commas SHOULD be omitted were possible
 
-		foo =
-			bar: 1
-			baz: 2
+	```coffeescript
+	foo =
+		bar: 1
+		baz: 2
+	```
 
 	instead of
 
-		foo =
-			bar: 1,
-			baz: 2
+	```coffeescript
+	foo =
+		bar: 1,
+		baz: 2
+	```
 
 	and
 
-		fruits = [
+	```coffeescript
+	fruits = [
 			apple
 			melon
 			pear
 		]
+	```
 
 	instead of
 
-		fruits = [
+	```coffeescript
+	fruits = [
 			apple,
 			melon,
 			pear
 		]
+	```
 
 - Inline commas MUST be followed by one space character
 
-		colors = ['green', 'yellow', 'red']
+	```coffeescript
+	colors = ['green', 'yellow', 'red']
+	```
 
 	instead of
 
-		colors = ['green','yellow','red']
+	```coffeescript
+	colors = ['green','yellow','red']
+	```
 
 
 ## Relational Operators
@@ -95,62 +107,81 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 - Single Quotes MUST be used for simple strings except
 	the string contains an interpolation (e.g. `"#{name}"`)
 
-		test = 'foo'
+	```coffeescript
+	test = 'foo'
+	```
 
 	instead of
 
-		test = "foo"
-
+	```coffeescript
+	test = "foo"
+	```
 
 
 ## Functions
 
 - Parentheses for an empty argument list MUST be omitted
 
-		logTest = ->
-			console.log 'test'
+	```coffeescript
+	logTest = ->
+		console.log 'test'
+	```
 
 	instead of
 
-		logTest = () ->
-			console.log 'test'
+	```coffeescript
+	logTest = () ->
+		console.log 'test'
+	```
 
 - Fat arrows MUST only be used when necessary
 
-		logTest = ->
-			console.log 'test'
+	```coffeescript
+	logTest = ->
+		console.log 'test'
+	```
 
 	instead of
 
-		logTest = =>
-			console.log 'test'
+	```coffeescript
+	logTest = =>
+		console.log 'test'
+	```
 
 
 ### Chaining
 
 - Method chains with more than 2 method calls MUST be wrapped and indented.
 
-		$('#items')
-			.find('.selected')
-			.highlight()
+	```coffeescript
+	$('#items')
+		.find('.selected')
+		.highlight()
+	```
 
 	instead of
 
-		$('#items').find('.selected').highlight()
+	```coffeescript
+	$('#items').find('.selected').highlight()
+	```
 
 - Sub-properties MUST not be wrapped
 
-		person.address.country
-			.toUpperCase()
-			.split('')
+	```coffeescript
+	person.address.country
+		.toUpperCase()
+		.split('')
+	```
 
 	instead of
 
-		person
-			.address
-			.country
-			.toUpperCase()
-			.split('')
+	```coffeescript
+	person
+		.address
+		.country
+		.toUpperCase()
+		.split('')
+	```
 
 
 - Methods SHOULD return `@` to enable method chaining
@@ -176,30 +207,38 @@ You MUST, however, explain the reasons for not sticking to a rule in a comment.
 
 - jQuery object variables MUST be prefixed with a `$`
 
-		$form = $ '#myForm'
+	```coffeescript
+	$form = $ '#myForm'
+	```
 
 	instead of
 
-		form = $ '#myForm'
+	```coffeescript
+	form = $ '#myForm'
+	```
 
 - Lookups MUST be cached
 
-		$form = $ '#form'
+	```coffeescript
+	$form = $ '#form'
 
-		$form.css {
-			'background-color': 'pink'
-		}
+	$form.css {
+		'background-color': 'pink'
+	}
 
-		# …
+	# …
 
-		$form.hide()
+	$form.hide()
+	```
 
 	instead of
 
-		$('#form').css {
-			'background-color': 'pink'
-		}
+	```coffeescript
+	$('#form').css {
+		'background-color': 'pink'
+	}
 
-		# …
+	# …
 
-		$('#form').hide()
+	$('#form').hide()
+	```
