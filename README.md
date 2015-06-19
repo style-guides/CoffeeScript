@@ -120,6 +120,22 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ## Objects
 
+- Objects MUST be split up over several lines
+
+	```coffeescript
+	vector =
+		x: 10
+		y: 20
+		z: 30
+	```
+
+	instead of
+
+	```coffeescript
+	vector = x: 10, y: 20, z: 30
+	```
+
+
 - Shorthand assignments with braces MUST be used in single-line assignments
 
 	```coffeescript
